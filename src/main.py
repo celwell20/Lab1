@@ -12,15 +12,18 @@ import pyb
 import time
 
 if __name__ == '__main__':
-    
+    ## Driver object for first motor
     motor1 = moe.MotorDriver(pyb.Pin.cpu.A10, pyb.Pin.cpu.B4, pyb.Pin.cpu.B5, 3)
+    
     motor1.enable()
     
+    ## Driver object for second motor
     motor2 = moe.MotorDriver(pyb.Pin.cpu.C1, pyb.Pin.cpu.A0, pyb.Pin.cpu.A1, 5)
     motor2.enable()
     
-
+    ## Driver object for first encoder
     enc1 = enc.EncoderDriver(pyb.Pin.cpu.B6, pyb.Pin.cpu.B7, 4)
+    ## Driver object for second encoder
     enc2 = enc.EncoderDriver(pyb.Pin.cpu.C6, pyb.Pin.cpu.C7, 8)
     
     enc1.set_position(0)

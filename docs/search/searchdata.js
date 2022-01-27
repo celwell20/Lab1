@@ -3,8 +3,8 @@ var indexSectionsWithContent =
   0: "_cdegmopstu",
   1: "em",
   2: "em",
-  3: "_gsu",
-  4: "cdopt"
+  3: "_degsu",
+  4: "cdemopt"
 };
 
 var indexSectionNames =

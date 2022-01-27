@@ -1,9 +1,7 @@
 var main_8py =
 [
-    [ "led_brightness", "main_8py.html#a727d69bdb0dd1bfc53e41689a654be27", null ],
-    [ "led_setup", "main_8py.html#a6ef5ac3570ce2c3589413b978e830e1d", null ],
-    [ "ch1", "main_8py.html#ad97cf16318b1f7ef44ba2900b3d36952", null ],
-    [ "percent", "main_8py.html#a0540c505adde91b7a2d1ccecef5b2c02", null ],
-    [ "state", "main_8py.html#a930442dd832ba9fe94227723c47f6653", null ],
-    [ "t0", "main_8py.html#a40b697d790636df39ccd298d72b767a1", null ]
+    [ "enc1", "main_8py.html#a120ad412b4254af981df604b899a6ebf", null ],
+    [ "enc2", "main_8py.html#a8290cb0b8b6ee24c36bb6a5b924a3fe5", null ],
+    [ "motor1", "main_8py.html#a3a2f088acede9b226beb08b70c42f146", null ],
+    [ "motor2", "main_8py.html#a1a2262732e6726079ffed3e075851a70", null ]
 ];

@@ -1,22 +1,25 @@
 ''' @file   motor_elwell_mccue.py
-    @brief
-    @details
+    @brief  A driver for the ME 405 BLDC motors 
+    @details  Initiates the pins, timers and channels necessary for PWM control with the motors. Allows one to
+              enable, disable, and set the duty cycle for the motors.
     @author    Clayton Elwell
     @author    Tyler McCue
-    @date
+    @date      January 27, 2022
 '''
 
 import pyb
 import time
 
 class MotorDriver:
-    '''@brief
-       @details
+    '''@brief    Module that allows one to interface with the ME 405 BLDC motors.
+       @details  Instantiates pins, timers, and channels necessary for PWM control. Allows one to enable, disable, and set duty
+                 cycle for the motors.
     '''
     
     def __init__(self, en_pin, in1pin, in2pin, timer):
-        '''@brief
-           @details
+        '''@brief    Creates pin attributes for various motor driver functions.
+           @details  Creates pin attributes for PWM, and channels and timers for sending PWM signals. Also sets up
+                     enable/disable pin.
            @param    en_pin Motor enabler pin
            @param    in1pin Motor power pin 1
            @param    in2pin Motor power pin 2
@@ -46,23 +49,23 @@ class MotorDriver:
         
     
     def enable(self):
-        '''@brief
-           @details
+        '''@brief    Enables the motor
+           @details  Sets the enable/disable pin to "high"
         '''
         self.onoff.high()
         time.sleep(0.25)
     
     def disable(self):
-        '''@brief
-           @details
+        '''@brief    Disables the motor
+           @details  Sets the enable/disable pin to "low"
         '''
         self.onoff.low()
         time.sleep(0.25)
     
     def set_duty_cycle(self, duty):
-        '''@brief
-           @details
-           @param    level A signed integer holding the duty cycle of one voltage sent to the motor
+        '''@brief    Sets the duty cycle for the motor
+           @details  Uses the input duty cycle to send a PWM percentage to the motors. Includes saturation limits.
+           @param    duty A signed integer holding the duty cycle of one voltage sent to the motor
         '''
         
         if duty >= 0:

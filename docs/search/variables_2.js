@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['onoff_0',['onoff',['../classmotor__elwell__mccue_1_1MotorDriver.html#aba44ed3f3cf14f503a9e35ed999ba8dd',1,'motor_elwell_mccue::MotorDriver']]]
+  ['enc1_0',['enc1',['../main_8py.html#a120ad412b4254af981df604b899a6ebf',1,'main']]],
+  ['enc2_1',['enc2',['../main_8py.html#a8290cb0b8b6ee24c36bb6a5b924a3fe5',1,'main']]]
 ];
