@@ -87,9 +87,6 @@ class MotorDriver:
                 self.ch1.pulse_width_percent(0)
         
         
-        print('Setting duty cycle to ' + str(duty))
-        
-        
 # if __name__ == '__main__':
 #     
 #     motor = MotorDriver(pyb.Pin.cpu.A10, pyb.Pin.cpu.B4, pyb.Pin.cpu.B5, 3)
